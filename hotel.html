@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+<link rel="stylesheet" href="w3.css">
+body,h1,h2,h3,h4,h5,h6 {font-family: "consolas";}
+body, html {
+  height: 100%;
+  color: grey;
+  line-height: 1.8; 	
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('abouts.jpeg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body bgcolor="#e2d1c3">
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">INFINITY</span> TRIPS</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center"><b>ABOUT US</b></h3>
+  <p class="w3-center"><em>Satisfying customers since '76</em></p>
+  <p>We have 72 comfortably equipped rooms, including two suites: The President Suite and the Ambassador Suite, with over one hundred metres of surface area, which are sure to awe even the most demanding Guests. We offer 7 rooms, where we have been preparing family and business meetings already for 15 years.
+Infinity Trips is not merely the building but, above all, its people. We are a team of professionals, who can organise every event end-to-end. We have many years of experience, extensive conference facilities, as well as technical and catering equipment, and we will be more than happy to organise your meeting ; both in our building, in a tent at the hotel's patio, as well as in any other place of your choosing.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="main.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off"  width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>This isn't the story of an overnight success. Every hotel and every loyal customer have been the reaping of our hardwork since day one.Even though the times have changed we still have stayed true to our roots but still incorporating the newness in each service. </p>
+    </div>
+  </div>
+ 
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center"><b>COME SEE US</b></h3>
+  <p class="w3-center"><em>Your feedbacks are our strength</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="static.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bengaluru, India<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 9074065516, 9497683413<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: infinitytrips@gmail.com<br>
+      </div>
+      <forms>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+ 
+ <h3>Follow us on:</h3>
+	<a href="https:\\www.instagram.com"><img src="insta.png" width="20px" height="20px"></a>
+    	<a href="https:\\www.facebook.com"><img src="fb.png" width="20px" height="20px"></a>
+	<a href="https:\\www.twitter.com"><img src="twitter.jpg" width="20px" height="20px"></a>
+  </div>
+
+</body>
+</html>

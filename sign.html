@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+<div>
+<h1 class= "pos_center">Infinity <img class="sub" src="infinity-xxl.png"/> Trips <br/></h1><h1 class="sign"> Sign Up</h1>
+<div class="login-box">
+<form name="form1" method="post">
+<table class="login-box">
+<tr><td>First Name:</td><td>
+  <div class="textbox">
+<input type="text" name="fname" placeholder="Enter First Name">
+  </td></tr> </div>
+<tr><td>Last Name:</td><td>
+  <div class="textbox">
+<input type="text" name="lname" placeholder="Enter Last Name">
+  </td></tr> </div>
+<tr><td>Email Address:</td><td>
+  <div class="textbox">
+<input type="text" name="em" placeholder="Enter Your Email Address">
+  </td></tr> </div>
+<tr><td>Date Of Birth:</td><td>
+  <div class="textbox">
+<input type="date" placeholder="Enter Your Age">
+  </td></tr> </div>
+<tr><td><br/></td><td>
+  <div>
+  </td></tr>
+<tr><td>Gender:</td><td><label class="container">Male
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Female
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+  </td></tr> </div>
+<tr><td><br/></td><td>
+  <div>
+  </td></tr>
+<tr><td>Places you like: </td><td>
+<label class="container1">Cold
+  <input type="checkbox" name="cof[]" checked="checked">
+  <span class="checkmark1"></span>
+</label>
+<label class="container1">Hilly
+  <input type="checkbox" name="cof[]">
+  <span class="checkmark1"></span>
+</label>
+<label class="container1">Beachy
+  <input type="checkbox" ="cof[]">
+  <span class="checkmark1"></span>
+</label>
+</td></tr>
+
+<tr><td><br/>City:</td>
+<td><div class="box" style="width:0p">
+  <select name="hel">
+    <option value="Selected" >Select City:</option>
+    <option value="1">Bengaluru</option>
+    <option value="2">Chennai</option>
+    <option value="3">Delhi</option>
+    <option value="4">Mumbai</option>
+    <option value="5">Hyderbad</option>  </select>
+</div></td></tr>
+<tr><td><br/></td><td>
+  <div>
+
+  </td></tr>
+<br/><br/>
+
+<tr><td>Username:</td><td>
+  <div class="textbox">
+<input type="text" id="myText"  name="usr">
+  </td></tr> </div>
+<tr><td>Password:</td><td>
+  <div class="textbox">
+<input type="password" name="pword">
+  </td></tr> </div>
+<tr><td>Retype Password:</td><td>
+  <div class="textbox">
+<input type="password" name="pword1">
+  </td></tr></div>
+<tr><td><br/></td><td>
+  <div>
+
+  </td></tr>
+<br/><br/>
+
+<tr><td align="center" colspan="2"><button class="btn" onclick="validateForm()" >Sign Up</button></td></tr>
+<br/><br/>
+<tr><td colspan="2">
+<p class=”new">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Already Have An Account?&nbsp;&nbsp;&nbsp;<a href=index.html>Login</a></p></td></tr>
+</div></div>
+</form>
+<script>
+    function validateForm() {
+var un = document.form1.usr.value;
+var pw = document.form1.pword.value;
+var pw1 = document.form1.pword1.value;
+var fn = document.form1.fname.value;
+var em = document.form1.em.value;
+var n="";
+var fn1 = document.form1.lname.value;
+var coffee = document.getElementsByName('cof[]');
+var flag;
+var letters = /^[A-Za-z]+$/;
+var letters1 = /^[A-Za-z0-9]+$/;
+for (i = 0; i < coffee.length; i++) {
+  if (coffee[i].checked) {
+    flag=1;
+  }
+}
+      if(fn.match(letters))
+      {
+    
+if(fn1.match(letters))
+      {
+if(em!=n)
+{
+         if ((un != n) && (pw != n))
+ {
+if(pw1 == pw)
+{
+if(flag==1)
+{
+if(document.form1.hel.selectedIndex==0)
+{ 
+alert("Please select a city");
+document.login.hel.focus();
+return false;
+}
+else
+{
+  window.open("C:/Users//Admin//Downloads//WEBDEV PROJECT//3. MAIN WEB SITE HAVING HOTELS/mainmenupage.html");
+}
+}
+else
+{
+alert("Select One Option From Checkbox");
+}
+}
+ 
+else
+{
+alert("Passwords Do Not Match");
+}}
+    else
+      {
+alert ("User name and Password Should Have Minimum 8 Letters and Cannot Be Left Empty");
+       }
+}
+else
+{
+alert("Email Cannot Be Left Empty");
+}
+}
+else
+{
+      alert('Last Name Should Have Alphabets Only And Cannot Be Left Empty');
+
+}
+
+      }
+      else
+      {
+      alert('First Name Should Have Alphabets Only And Cannot Be Left Empty');
+            } 
+   
+}
+                       
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<form name="form1" method="post" onsubmit="return validateForm()">
+<div>
+<h1 class= "pos_center">Infinity <img class="sub" src="infinity-xxl.png"/> Trips</h1>
+<br/>
+<div class="login-box">
+<br/>
+<div>
+
+  <h1 class=”log”>Login</h1>
+  <div class="textbox">
+<div>
+       <input type="text" name="usr" placeholder="Username">
+  </div>
+</div>
+
+  <div class="textbox">
+
+    <input type="password" name="pword" placeholder="Password">
+  </div>
+<br/><br/>
+
+  <input type="submit" class="btn" value="Sign in" onSubmit="validateForm();">
+</div></form>
+<p class=”new””>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New User?&nbsp;&nbsp;&nbsp;<a target="_blank" href=sign.html>Sign Up </a></p>
+  <script>
+    function validateForm() {
+        var un = document.form1.usr.value;
+        var pw = document.form1.pword.value;
+        var username = "huraiskhan"; 
+        var password = "webdev";
+        if ((un == username) && (pw == password))
+ {
+           
+           window.open("mainmenupage.html")
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+       return false;
+ }
+      }
+</script>
+</body>
+</html>

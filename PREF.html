@@ -1,0 +1,95 @@
+<html>
+<head><title>Enter Details</title>
+</title>
+<link rel="stylesheet" href="w3.css">
+<style>
+.h {position:relative;
+	left:250px;
+	top:20px;
+	width:810px;
+	border-style:ridge;
+	border-width:50pt
+	}
+body{background-size:cover;}
+button{background-color: #ADD8E6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;}
+.foot{padding:30px;
+	
+	word-spacing:5px;}
+</style>
+</head>
+<body background="back.png">
+<div class="w3-container">
+<div class="w3-panel w3-card w3-white h">
+<form name="myform">
+<table name="mytable" align="center">
+<th><p align="center">ENTER YOUR PREFERENCES</p><br/></th>
+<tr><td><p align="center"> Select Check-In Date</td><td> <input type="date" name="date1" id="d"/></p></td></tr>
+<tr><td><p align="center"> Select Check-In Time</td><td> <input type="time" name="time1" /></p></td></tr>
+<tr><td><p align="center"> Select Check-Out Date</td><td> <input type="date" name="date2" id="d1" /></p></td></tr>
+<tr><td><p align="center"> Select Check-Out Time</td><td> <input type="time" name="time2" /></p></td></tr>
+
+<tr><td><p align="center"> No of adults </td><td><input type="radio" name="number" value="zero" > 1<br>
+  				<input type="radio" name="number" value="one"> 2 <br>
+  				<input type="radio" name="number" value="two"> 3 </p></td></tr>
+<tr></tr><tr></tr><tr></tr>
+
+<tr><td><p align="center"> No of children </td><td><input type="radio" name="numberc" value="zero"> 0<br>
+  				<input type="radio" name="numberc" value="one"> 1 <br>
+  				<input type="radio" name="numberc" value="two"> 2 <br>
+				<input type="radio" name="numberc" value="three"> 3 </p></tr></td><br/>
+<tr><td><a href=""><button onclick="validate()">Proceed To Checkout</button></a></td></tr>
+</table>
+</div>
+</div>
+<script>
+function validate()
+{
+	var a =document.getElementById("d").value;
+
+	if(a.length==0)
+{alert('Please select check-in date');}
+ else
+	myFunction();
+
+var b=document.getElementById("d1").value;
+	if(b.length==0)
+{alert('Please select check-out date');}
+ else
+	myFunction();
+
+}	
+
+function myFunction()
+{ var a = Math.floor(Math.random() * 100);
+	if (a<=10)
+	{window.open("C:/Users//Admin//Downloads//WEBDEV PROJECT/5.PAYMENT/hotel1pay.html")}
+	else if(a<=30)
+	{window.open("C:/Users//Admin//Downloads//WEBDEV PROJECT/5.PAYMENT/hotel2pay.html")}
+	else if (a<=50)
+	{window.open("C:/Users//Admin//Downloads//WEBDEV PROJECT/5.PAYMENT/hotel3pay.html")}
+	else
+	{window.open("C:/Users//Admin//Downloads//WEBDEV PROJECT/5.PAYMENT/hotel2pay.html")}
+  
+}
+</script>
+<br><br>
+<hr id="about">
+<div class="foot">
+<pre><h3><b>INFINITY TRIPS™</b></h3>
+Phone:9074065516
+Bengaluru,India
+Follow us on:</pre>
+
+	<a href="https:\\www.instagram.com"><img src="insta.png" width="20px" height="20px"></a>
+    	<a href="https:\\www.facebook.com"><img src="fb.png" width="20px" height="20px"></a>
+	<a href="https:\\www.twitter.com"><img src="twitter.jpg" width="20px" height="20px"></a>
+</div>
+</body>
+</html>
